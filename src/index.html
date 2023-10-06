@@ -8,16 +8,70 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <header class="hero">
         <div class="container">
-            <img class="hero__logo" src="./images/ebac_logo.svg" alt="">
-            <p class="hero__text"> A maior festa vista inicia em 15d 8h 30min 10s</p>
+            <img class="hero__logo" src="./images/eu.jpg" alt="">
+            <p class="hero__text"> A maior festa vista inicia em  <span id="contador"></span></p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Centro de Eventos - São Caetano do Sul - SP
+                    </li>
+                   
+                    <li class="infos-bar__infos__item">
+                        <b>Quando:</b>
+                        Dia 06/04/2024 á 19:00hrs
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta sua Vaga
+                </a>
+            </div>
         </div>
     </header>
-
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Shows</h2>
+                <p class="event__details__description">Teremos a presença da cantora Ana Castela Cantando seus maiores sucessos</p>
+            </div>
+            <img class="event__image" src="./images/Ana castela.png" alt="">
+        </div>
+    </section>
+    <section class="event event--ux-ui event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Comidas</h2>
+                <p class="event__details__description">Grande variedades de comidas tipicas da fazenda. Um verdadeiro prazer do mato.</p>
+            </div>
+            <img class="event__image" src="./images/comida.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">Bebidas</h2>
+                <p class="event__details__description">Bebidas a vontade, desde caipirinhas feitas na hora, whisky, Vodkas, cervejas, sucos e refrigerantes *beba com moderação!</p>
+            </div>
+            <img class="event__image" src="./images/bebidas.jpg" alt="">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">Criançada</h2>
+                <p class="event__details__description">Enorme parque de diversão para crianças com eventos circenses e muita integração com animais de fazenda</p>
+            </div>
+            <img class="event__image" src="./images/parque.jpeg" alt="">
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
+    
 </body>
 </html>
